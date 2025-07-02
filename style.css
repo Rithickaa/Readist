@@ -1,0 +1,234 @@
+html{
+    scroll-behavior: smooth;
+}
+.heads{
+    text-align: center;
+    font-size: larger;
+    background-color: beige;
+}
+.img{
+    height: 300px;
+    width: 200px;
+    border: 5px inset white;
+}
+.images{
+    display: inline-block;
+}
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#page a {
+    flex: 1 1 33.33%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+    background-color: #212842;
+    color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+#page a:hover {
+    background-color: #3142a2;
+    color: white;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+.fbooks{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.categories{
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.cat{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+a{
+    font-size: large;
+    text-decoration: none;
+}
+#page a:hover{
+    background-color: #3142a2;
+    color: white;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+#hi{
+    position: relative;
+    top: 5px;
+    font-size: larger;
+}
+#content{
+    text-align: center;
+}
+a > .b1{
+    background-color: #212842;
+    color: white;
+    position: relative;
+    left: 670px;
+}
+a > .b1:hover{
+    background-color: #55669f;
+    color: white;
+}
+#contact{
+    text-align: center;
+}
+.heads .icon img{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+/* Horizontal scroll for Genres - applies to all screen sizes */
+.categories {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.categories::-webkit-scrollbar {
+    height: 8px;
+}
+.categories::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+.categories::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.categ {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+/* Mobile (phones, less than 600px) */
+@media screen and (max-width: 600px) {
+    #page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #page a {
+        flex: none;
+        width: 100%;
+        font-size: medium;
+        padding: 12px 0;
+    }
+
+    .fbooks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images {
+        margin-bottom: 20px;
+    }
+
+    #img, #cat {
+        width: 80%;
+        height: auto;
+    }
+
+    .icon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hi, #hh {
+        font-size: 1.5rem;
+    }
+
+    a > .b1 {
+        left: 0;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/* Tablets (600px to 900px) */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    #page {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #page a {
+        flex: 1 1 50%;
+        font-size: large;
+        padding: 15px 0;
+    }
+
+    .fbooks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .images {
+        margin: 10px;
+    }
+
+    #img, #cat {
+        width: 180px;
+        height: auto;
+    }
+
+    a > .b1 {
+        left: 0;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/* Desktop (more than 900px) */
+@media screen and (min-width: 900px) {
+    #page a {
+        flex: 1 1 33.33%;
+        padding: 15px 0;
+    }
+
+    .fbooks {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .images {
+        margin: 10px;
+    }
+
+    #img {
+        width: 200px;
+        height: 300px;
+    }
+
+    #cat {
+        width: 200px;
+        height: 200px;
+    }
+
+    a > .b1 {
+        left: 670px;
+    }
+}

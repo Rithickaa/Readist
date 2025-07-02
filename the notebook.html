@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It ends with us</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(244, 243, 230);
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+        }
+        p{
+            color: black;
+            padding-top: 5%;
+            margin-left: 10%;
+            font-size:x-large;
+            margin-right: 10%;
+        }
+        img{
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
+        #head{
+            color: #0a0a0a;
+            font-family:'Times New Roman', Times, serif;
+        }
+        #title{
+            text-align: center;
+        }
+        #bdy{
+            background-color: rgb(221, 219, 195);
+            height: 350px;
+            width: 100%;
+        }
+        #two{
+            background-color: rgb(194, 190, 136);
+            font-family: 'Times New Roman', Times, serif;
+            height: 350px;
+            width: 100%;  
+        }
+        p2{
+            text-align: center;
+            margin-left: 2%;
+        }
+        
+
+        button{
+            background-color: rgb(42, 49, 3);
+            font-size: larger;
+            color: rgb(243, 240, 240)
+        }
+        *{
+            margin: 0px;
+        }
+        #page a{
+            display: inline-block;
+            width: 504px;
+            margin: 0px;
+            text-align: center;
+            background-color: rgb(154, 149, 80);
+            color: white;
+            font-size:large;
+            text-decoration: none;
+            border-top: 1px solid rgb(244, 243, 230);
+            border-bottom: 1px solid rgb(244, 243, 230);
+        }
+        button:hover{
+            background-color: rgb(243, 239, 239);
+            color: rgb(68, 51, 37);
+        }
+        #page >.link:hover{
+            background-color: rgb(42, 49, 3);
+            color: white;
+        }
+        .heads{
+            position: relative;
+            right: 170px;
+            top: 30px;
+        }
+        @media screen and (max-width: 600px) {
+            #page a {
+                display: block;
+                width: 100%;
+                padding: 12px 0;
+                font-size: medium;
+            }
+
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                width: 45%;
+                height: auto;
+            }
+
+            #bdy, #two {
+                height: auto;
+                padding-bottom: 20px;
+            }
+
+            p, #p2 {
+                font-size: medium;
+                padding: 0 5%;
+                text-align: justify;
+            }
+
+            .heads {
+                position: static;
+                margin-top: 20px;
+            }
+
+            button {
+                font-size: medium;
+                padding: 10px 20px;
+            }
+        }
+
+        /* Tablets (601px to 900px) */
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            #page a {
+                width: 100%;
+                font-size: large;
+                padding: 12px 0;
+            }
+
+            img {
+                float: none;
+                display: block;
+                margin: 15px auto;
+                width: 40%;
+                height: auto;
+            }
+
+            #bdy, #two {
+                height: auto;
+                padding-bottom: 20px;
+            }
+
+            p, #p2 {
+                font-size: large;
+                padding: 0 8%;
+                text-align: justify;
+            }
+
+            .heads {
+                position: static;
+                margin-top: 20px;
+            }
+
+            button {
+                font-size: large;
+                padding: 12px 25px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h1 style="color: black;">Readist</h1>
+    </div><br>
+    <div id="page">
+        <a href="./Readist.html" class="link">Home</a>
+        <a href="./about.html" class="link">About Us</a>
+        <a href="./contact.html" class="link">Contact Us</a>
+
+    </div><br>
+    <div id="head">
+        <h1>The Notebooks</h1>
+        <h2>Nicholas Sparks</h2>
+    </div><br>
+    <div id="bdy">
+        <img id="one" src="./TheNotebook.jpg" height="300" width="200" alt="book1">
+        <h2 style="color: black;" class="heads">Description</h2>
+        <p id="p1">“The Notebook” is a tender and heart-wrenching romance that tells the story of Noah and Allie, two young lovers from different social worlds. Their passionate summer romance is cut short by societal pressures and war. Years later, when they cross paths again, they must decide if their love can overcome the obstacles that once tore them apart. Told with deep sentiment and reflection, this novel explores themes of enduring love, memory, and second chances.
+        </p>
+    
+    </div>
+
+    <div id="two">
+        <img id="id2" src="./author book1.jpeg" height="300" width="200" alt="book1">
+        <h2 style="color: black;" class="heads">Meet the author</h2>
+        <p id="p2">
+            Nicholas Sparks is a celebrated American novelist and screenwriter best known for writing deeply emotional love stories. Born in 1965 in Omaha, Nebraska, he gained worldwide acclaim with The Notebook (1996), which became a bestselling novel and a successful film. Many of his books, including A Walk to Remember and Dear John, have been adapted into movies. His works have sold over 100 million copies, and he is known for writing tearjerking romance with moral undertones and heartfelt emotion.
+        </p>
+    
+    </div>
+    <br><br>
+    <div class="three">
+        <a href="https://www.google.com/search?sca_esv=21add0260304d420&rlz=1C1RXQR_enIN1098IN1098&sxsrf=AE3TifOfLw93jnMBugEXAAIY8Ow_2o_lsQ:1749722040643&q=the+notebook+book+by+nicholas+sparks&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIWpWdTkmbiVNN237BIzLCjaNHB9sLSe2lOqXXz9MyW_twIw6GR99FBnofCE3VAm-KdmW-LczfyFrhM8ii1__BlfqLJshDh2XtNxtpmrb08_fB3WYIX8fLghdAL8PRm51iXm-Tjumb2slVnOxCyivhEKNE_wZA&ved=1t:220175&ictx=111&biw=1536&bih=730&dpr=1.25" >
+            <button>Shop Now</button>
+        </a>
+    </div>
+    <br><br>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heads{
+            text-align: center;
+            font-size: larger;
+        }
+        #page a {
+            display: inline-block;
+            width: 490px;
+            margin: 0px;
+            text-align: center;
+            font-size: large;
+            text-decoration: none;
+            background-color: #212842;
+            color: white;
+            border: 1px solid white; 
+            box-sizing: border-box;  
+        }
+
+        body{
+            background-color: #faeddd;
+            text-decoration: none;
+        }
+        h2{
+            text-align: center;
+        }
+        .col{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: black;
+        }
+        img{
+            height: 300px;
+            width: 200px;
+        }
+        .img1{
+            height: 450px;
+            width: 30%;
+            background-color: #d6d2d3;
+            text-align: center;
+        }
+        .img2{
+            height: 450px;
+            width: 30%;
+            background-color: rgb(230, 230, 230);
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+        .img3{
+            height: 450px;
+            width: 30%;
+            background-color: rgb(213, 239, 235);
+            text-align: center;
+        }
+        #page > .link:hover{
+            background-color: #374471;
+            color: white;
+        }
+        p{
+            font-size: large;
+        }
+        a{
+            font-size: large;
+            text-decoration: none;
+        }
+        @media screen and (max-width: 600px) {
+            #page a {
+                display: block;
+                width: 100%;
+                font-size: medium;
+                padding: 10px 0;
+            }
+
+            .col {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img1, .img2, .img3 {
+                width: 90%;
+                margin: 10px 0;
+            }
+
+            img {
+                width: 60%;
+                height: auto;
+            }
+
+            p {
+                font-size: medium;
+            }
+        }
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+            #page {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #page a {
+                flex: 1 1 50%;
+                font-size: large;
+                padding: 12px 0;
+            }
+
+            .col {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .img1, .img2, .img3 {
+                width: 45%;
+                margin: 10px;
+            }
+
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+        @media screen and (min-width: 900px) {
+            .col {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .img1, .img2, .img3 {
+                width: 30%;
+            }
+
+            img {
+                width: 200px;
+                height: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heads">
+        <h1>Readist</h1>
+        <p>Start Your Story with Readist</p>
+    </div><br>
+    <div id="page">
+        <a href="./Readist.html" class="link">Home</a>
+        <a href="./about.html" class="link">About Us</a>
+        <a href="./contact.html" class="link">Contact Us</a>
+
+    </div><br>
+    <h2>Mystery or Thriller</h2>
+    <div class="col">
+        <div class="img1">
+            <a href="./gone girl.html">
+                <img src="./Gone Girl.jpg" id="img" alt="book1"><br>
+                <figcaption>Gone Girl</figcaption>
+            </a><br>
+            <p> A husband becomes the prime suspect when his wife mysteriously disappears.</p>
+        </div>
+        <div class="img2">
+            <a href=".//the girl on the train.html">
+                <img src="./The girl on the train(mt).jpeg" id="img" alt="book2">
+                <figcaption>The Girl On the Train</figcaption>
+            </a><br>
+            <p>An alcoholic woman becomes entangled in a missing person case she might have witnessed.</p>
+        </div>
+        <div class="img3">
+            <a href="./silent patient.html">
+                <img src="./The silent patient.jpeg" id="img" alt="book3">
+                <figcaption>The Silent Patient</figcaption>
+            </a><br>
+            <p>A famous painter shoots her husband and never speaks again — until a therapist tries to uncover why.</p>
+        </div>
+    </div>
+</body>
+</html>

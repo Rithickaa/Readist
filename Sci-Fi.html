@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heads{
+            text-align: center;
+            font-size: larger;
+        }
+        #page a {
+            display: inline-block;
+            width: 490px;
+            margin: 0px;
+            text-align: center;
+            font-size: large;
+            text-decoration: none;
+            background-color: #212842;
+            color: white;
+            border: 1px solid white; 
+            box-sizing: border-box;  
+        }
+
+        body{
+            background-color: #faeddd;
+            text-decoration: none;
+        }
+        h2{
+            text-align: center;
+        }
+        .col{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: black;
+        }
+        img{
+            height: 300px;
+            width: 200px;
+        }
+        .img1{
+            height: 450px;
+            width: 30%;
+            background-color: #decbc0;
+            text-align: center;
+        }
+        .img2{
+            height: 450px;
+            width: 30%;
+            background-color: rgb(211, 209, 209);
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+        .img3{
+            height: 450px;
+            width: 30%;
+            background-color: rgb(213, 239, 235);
+            text-align: center;
+        }
+        #page > .link:hover{
+            background-color: #3a4e8f;
+            color: white;
+        }
+        p{
+            font-size: large;
+        }
+        a{
+            font-size: large;
+            text-decoration: none;
+        }
+        @media screen and (max-width: 600px) {
+            #page a {
+                display: block;
+                width: 100%;
+                font-size: medium;
+                padding: 10px 0;
+            }
+
+            .col {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img1, .img2, .img3 {
+                width: 90%;
+                margin: 10px 0;
+                height: auto; /* Add this */
+                padding: 10px; /* Optional: to give spacing inside */
+            }
+
+            img {
+                width: 60%;
+                height: auto;
+            }
+
+            p {
+                font-size: medium;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+            #page {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #page a {
+                flex: 1 1 50%;
+                font-size: large;
+                padding: 12px 0;
+            }
+
+            .col {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .img1, .img2, .img3 {
+                width: 45%;
+                margin: 10px;
+            }
+
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+        @media screen and (min-width: 900px) {
+            .col {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .img1, .img2, .img3 {
+                width: 30%;
+            }
+
+            img {
+                width: 200px;
+                height: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heads">
+        <h1>Readist</h1>
+        <p>Start Your Story with Readist</p>
+    </div><br>
+    <div id="page">
+        <a href="./Readist.html" class="link">Home</a>
+        <a href="./about.html" class="link">About Us</a>
+        <a href="./contact.html" class="link">Contact Us</a>
+
+    </div><br>
+    <h2>Science-Fiction</h2>
+    <div class="col">
+        <div class="img1">
+            <a href="./dune.html">
+                <img src="./dune (sf).jpg" id="img" alt="book1"><br>
+                <figcaption>Dune</figcaption>
+            </a><br>
+            <p>A young noble must survive political betrayal and destiny on a desert planet with mysterious power.</p>
+        </div>
+        <div class="img2">
+            <a href="./the hunger games.html">
+                <img src="./the hunger games (sf).jpg" id="img" alt="book2">
+                <figcaption>The Hunger Games</figcaption>
+            </a><br>
+            <p>A teen girl must survive a deadly televised competition in a dystopian world.</p>
+        </div>
+        <div class="img3">
+            <a href="./enders game.html">
+                <img src="./Ender's game.jpg" id="img" alt="book3">
+                <figcaption>Ender's Game</figcaption>
+            </a><br>
+            <p>A gifted boy trains in space to lead Earth’s defense against an alien threat.</p>
+        </div>
+    </div>
+</body>
+</html>

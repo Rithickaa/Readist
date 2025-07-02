@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heads{
+            text-align: center;
+            font-size: larger;
+        }
+        #page a {
+            display: inline-block;
+            width: 490px;
+            margin: 0px;
+            text-align: center;
+            font-size: large;
+            text-decoration: none;
+            background-color: #212842;
+            color: white;
+            border: 1px solid white; 
+            box-sizing: border-box;  
+        }
+        body{
+            background-color: #e5e0d9;
+            text-decoration: none;
+        }
+        h2{
+            text-align: center;
+        }
+        .col{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: black;
+        }
+        img{
+            height: 300px;
+            width: 200px;
+        }
+        .img1{
+            height: 450px;
+            width: 30%;
+            background-color: #eaead2;
+            text-align: center;
+        }
+        .img2{
+            height: 450px;
+            width: 30%;
+            background-color: rgb(212, 234, 233);
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+        .img3{
+            height: 450px;
+            width: 30%;
+            background-color: rgb(232, 217, 200);
+            text-align: center;
+        }
+        #page > .link:hover{
+            background-color: #394672;
+            color: whhite;
+        }
+        p{
+            font-size: large;
+        }
+        a{
+            font-size: large;
+            text-decoration: none;
+        }
+        @media screen and (max-width: 600px) {
+            #page a {
+                display: block;
+                width: 100%;
+                font-size: medium;
+                padding: 10px 0;
+            }
+
+            .col {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img1, .img2, .img3 {
+                width: 90%;
+                margin: 10px 0;
+            }
+
+            img {
+                width: 60%;
+                height: auto;
+            }
+
+            p {
+                font-size: medium;
+            }
+        }
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+            #page {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #page a {
+                flex: 1 1 50%;
+                font-size: large;
+                padding: 12px 0;
+            }
+
+            .col {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .img1, .img2, .img3 {
+                width: 45%;
+                margin: 10px;
+            }
+
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+        @media screen and (min-width: 900px) {
+            .col {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .img1, .img2, .img3 {
+                width: 30%;
+            }
+
+            img {
+                width: 200px;
+                height: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heads">
+        <h1>Readist</h1>
+        <p>Start Your Story with Readist</p>
+    </div><br>
+    <div id="page">
+        <a href="./Readist.html" class="link">Home</a>
+        <a href="./about.html" class="link">About Us</a>
+        <a href="./contact.html" class="link">Contact Us</a>
+
+    </div><br>
+    <h2>Contemporary</h2>
+    <div class="col">
+        <div class="img1">
+            <a href="./book2.html">
+                <img src="./the girl made of clay.jpeg" id="img" alt="book1"><br>
+                <figcaption>The Girl Made Out Of Clay</figcaption>
+            </a><br>
+            <p> A woman reconnects with her estranged, ill father and uncovers family secrets.</p>
+        </div>
+        <div class="img2">
+            <a href="./Little fires everywhere.html">
+                <img src="./little fires everywhere.jpeg" id="img" alt="book2">
+                <figcaption>Little Fires Everywhere</figcaption>
+            </a><br>
+            <p>A picture-perfect town is shaken by a custody battle and the arrival of a mysterious artist.</p>
+        </div>
+        <div class="img3">
+            <a href="./Eleanor Oliphant is completely fine.html">
+                <img src="./eleanor oliphant is completely fine.jpeg" id="img" alt="book3">
+                <figcaption>Eleanor Oliphant is Completely Fine</figcaption>
+            </a><br>
+            <p> A quirky, socially awkward woman learns to open up and heal from her past.</p>
+        </div>
+    </div>
+</body>
+</html>

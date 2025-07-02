@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It ends with us</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #9ecad5;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            color: #013433;
+            padding-top: 5%;
+            margin-left: 10%;
+            font-size:x-large;
+            margin-right: 10%;
+        }
+        img{
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
+        #head{
+            color: #020125;
+            font-family:'Times New Roman', Times, serif;
+        }
+        #title{
+            text-align: center;
+        }
+        #bdy{
+            background-image: url(../bg/img\ 13.jpeg);
+            height: 350px;
+            width: 100%;
+        }
+        #two{
+            background-color: #08417f;
+            font-family: 'Times New Roman', Times, serif;
+            height: 350px;
+            width: 100%;
+        }
+        #two > p{
+            color: white;
+        }
+        p2{
+            text-align: center;
+            margin-left: 2%;
+        }
+        
+
+        button{
+            background-color: #020125;
+            font-size: larger;
+            color: rgb(243, 240, 240)
+        }
+        *{
+            margin: 0px;
+        }
+        #page a{
+            display: inline-block;
+            width: 504px;
+            margin: 0px;
+            text-align: center;
+            background-color: #016297;
+            font-size:large;
+            text-decoration: none;
+            color: white;
+            border-top: 1px solid #9ecad5;
+            border-bottom: 1px solid #9ecad5;
+        }
+        button:hover{
+            background-color: rgb(243, 239, 239);
+            color: #020125;
+        }
+        #page >.link:hover{
+            background-color: #020125;;
+            color: rgb(255, 255, 255);
+        }
+        .heads{
+            position: relative;
+            right: 170px;
+            top: 30px;
+        }
+        @media screen and (max-width: 600px) {
+            #page a {
+                display: block;
+                width: 100%;
+                padding: 12px 0;
+                font-size: medium;
+            }
+
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                width: 45%;
+                height: auto;
+            }
+
+            #bdy, #two {
+                height: auto;
+                padding-bottom: 20px;
+            }
+
+            p, #p2 {
+                font-size: medium;
+                padding: 0 5%;
+                text-align: justify;
+            }
+
+            .heads {
+                position: static;
+                margin-top: 20px;
+            }
+
+            button {
+                font-size: medium;
+                padding: 10px 20px;
+            }
+        }
+
+        /* Tablets (601px to 900px) */
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            #page a {
+                width: 100%;
+                font-size: large;
+                padding: 12px 0;
+            }
+
+            img {
+                float: none;
+                display: block;
+                margin: 15px auto;
+                width: 40%;
+                height: auto;
+            }
+
+            #bdy, #two {
+                height: auto;
+                padding-bottom: 20px;
+            }
+
+            p, #p2 {
+                font-size: large;
+                padding: 0 8%;
+                text-align: justify;
+            }
+
+            .heads {
+                position: static;
+                margin-top: 20px;
+            }
+
+            button {
+                font-size: large;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h1 style="color: #020125;;">Readist</h1>
+    </div><br>
+    <div id="page">
+        <a href="./Readist.html" class="link">Home</a>
+        <a href="./about.html" class="link">About Us</a>
+        <a href="./contact.html" class="link">Contact Us</a>
+
+    </div><br>
+    <div id="head">
+        <h1>It Ends with Us</h1>
+        <h2>Colleen Hoover</h2>
+    </div><br>
+    <div id="bdy">
+        <img id="one" src="./all the light we cannot see.jpg" height="300" width="200" alt="book1">
+        <h2 style="color: #020125;;" class="heads">Description</h2>
+        <p id="p1">“The Girl Made of Clay” is a contemporary novel about Sara, a sculptor whose estranged, famous war-photographer father returns into her life after being injured in a fire. As she cares for him, she confronts painful memories and unresolved wounds, all while trying to hold her own family together. The story explores healing, forgiveness, and the complexities of father-daughter relationships.
+        </p>
+    
+    </div>
+
+    <div id="two">
+        <img id="id2" src="./author book1.jpeg" height="300" width="200" alt="book1">
+        <h2 style="color: white;" class="heads">Meet the author</h2>
+        <p id="p2">
+            Nicole Meier is an American author known for her heartfelt contemporary fiction. Her novels often focus on women’s journeys, family dynamics, and emotional growth. With a background in journalism and travel writing, Meier brings rich detail and emotional nuance to her storytelling, making her books resonate with readers who enjoy reflective and moving narratives.
+        </p>
+    
+    </div>
+    <br><br>
+    <div class="three">
+        <a href="https://www.google.com/search?sca_esv=0c57f3453f651efe&rlz=1C1RXQR_enIN1098IN1098&sxsrf=AE3TifOk4NQp7vpNK6QwhDafzeIiWHxoTg:1749737850372&q=all+the+light+we+cannot+see&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeioyp3OhN11EY0n5qfq-zEMZldv_eRjZ2XLYc5GnVnME7glWodDcaQwvGYJtospyF4hao4VocMoniUVvlzzwRcB_gh46MHhrDPH5NOVwPivjadeakFm05zxnpGxC0pvMBL6-v6zKyyE5nBk0bvDg1EPDxHf7xVk4s29Sxnujftn4liXpkA&ved=1t:220175&ictx=111&biw=1536&bih=730&dpr=1.25" >
+            <button>Shop Now</button>
+        </a>
+    </div>
+    <br><br>
+</body>
+</html>
