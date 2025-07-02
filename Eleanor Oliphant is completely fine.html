@@ -1,203 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It ends with us</title>
-    <style>
-        body{
-            text-align: center;
-            background-color: #f9f5f7;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        p{
-            color: #850e35;
-            padding-top: 5%;
-            margin-left: 10%;
-            font-size:x-large;
-            margin-right: 10%;
-            color: black;
-        }
-        img{
-            float: left;
-            margin-top: 2%;
-            margin-left: 5%;
-            margin-right: 5%;
-            
-        }
-        #head{
-            color: black;
-            font-family:'Times New Roman', Times, serif;
-        }
-        #title{
-            text-align: center;
-        }
-        #bdy{
-            background-color: rgb(219, 217, 217);
-            height: 350px;
-            width: 100%;
-        }
-        #two{
-            background-color: grey;
-            font-family: 'Times New Roman', Times, serif;
-            height: 350px;
-            width: 100%;
-        }
-        #two > p{
-            color: white;
-        }
-        p2{
-            text-align: center;
-            margin-left: 2%;
-        }
-        
-
-        button{
-            background-color: rgb(55, 54, 55);
-            font-size: larger;
-            color: rgb(243, 240, 240)
-        }
-        *{
-            margin: 0px;
-        }
-        #page a{
-            display: inline-block;
-            width: 504px;
-            margin: 0px;
-            text-align: center;
-            background-color: #737572;;
-            font-size:large;
-            text-decoration: none;
-            color: white;
-            border-top: 1px solid #fcf4f8;
-            border-bottom: 1px solid #fcf4f8;
-        }
-        button:hover{
-            background-color: rgb(243, 239, 239);
-            color: rgb(12, 12, 12);
-        }
-        #page >.link:hover{
-            background-color: rgb(54, 54, 54);
-            color: rgb(255, 255, 255);
-        }
-        .heads{
-            position: relative;
-            right: 170px;
-            top: 30px;
-        }
-        @media screen and (max-width: 600px) {
-            #page a {
-                display: block;
-                width: 100%;
-                padding: 12px 0;
-                font-size: medium;
-            }
-
-            img {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                width: 45%;
-                height: auto;
-            }
-
-            #bdy, #two {
-                height: auto;
-                padding-bottom: 20px;
-            }
-
-            p, #p2 {
-                font-size: medium;
-                padding: 0 5%;
-                text-align: justify;
-            }
-
-            .heads {
-                position: static;
-                margin-top: 20px;
-            }
-
-            button {
-                font-size: medium;
-                padding: 10px 20px;
-            }
-        }
-
-        /* Tablets (601px to 900px) */
-        @media screen and (min-width: 601px) and (max-width: 900px) {
-            #page a {
-                width: 100%;
-                font-size: large;
-                padding: 12px 0;
-            }
-
-            img {
-                float: none;
-                display: block;
-                margin: 15px auto;
-                width: 40%;
-                height: auto;
-            }
-
-            #bdy, #two {
-                height: auto;
-                padding-bottom: 20px;
-            }
-
-            p, #p2 {
-                font-size: large;
-                padding: 0 8%;
-                text-align: justify;
-            }
-
-            .heads {
-                position: static;
-                margin-top: 20px;
-            }
-
-            button {
-                font-size: large;
-                padding: 12px 25px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eleanor Oliphant is Completely Fine</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #f9f5f7;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+    h1, h2 {
+      color: black;
+    }
+    p {
+      color: black;
+      padding: 2% 10%;
+      font-size: large;
+      text-align: justify;
+    }
+    img {
+      float: left;
+      margin: 2% 5%;
+    }
+    #bdy, #two {
+      width: 100%;
+      padding: 20px 0;
+    }
+    #bdy {
+      background-color: rgb(219, 217, 217);
+    }
+    #two {
+      background-color: grey;
+    }
+    #two p {
+      color: white;
+    }
+    .heads {
+      text-align: left;
+      margin-left: 30%;
+    }
+    .three button {
+      background-color: rgb(55, 54, 55);
+      font-size: large;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .three button:hover {
+      background-color: rgb(243, 239, 239);
+      color: black;
+    }
+    #page a {
+      display: inline-block;
+      width: 33.3%;
+      text-align: center;
+      background-color: #737572;
+      font-size: large;
+      text-decoration: none;
+      color: white;
+      padding: 10px 0;
+      border-top: 1px solid #fcf4f8;
+      border-bottom: 1px solid #fcf4f8;
+    }
+    #page a:hover {
+      background-color: rgb(54, 54, 54);
+    }
+    @media screen and (max-width: 768px) {
+      img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 50%;
+        height: auto;
+      }
+      .heads {
+        margin-left: 0;
+        text-align: center;
+      }
+      p {
+        padding: 0 5%;
+        font-size: medium;
+      }
+      .three button {
+        font-size: medium;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div id="title">
-        <h1 style="color: black;">Readist</h1>
-    </div><br>
-    <div id="page">
-        <a href="./Readist.html" class="link">Home</a>
-        <a href="./about.html" class="link">About Us</a>
-        <a href="./contact.html" class="link">Contact Us</a>
 
-    </div><br>
-    <div id="head">
-        <h1>Eleanor Oliphant is Completely Fine</h1>
-        <h2>Gail Honeyman</h2>
-    </div><br>
-    <div id="bdy">
-        <img id="one" src="./eleanor oliphant is completely fine.jpeg" height="300" width="200" alt="book1">
-        <h2 style="color: black;" class="heads">Description</h2>
-        <p id="p1">“Eleanor Oliphant Is Completely Fine” follows Eleanor, a socially awkward and isolated woman living a routine life in Glasgow. Beneath her peculiar habits and blunt honesty lies a deeply traumatic past she refuses to confront. When she forms an unexpected friendship with Raymond, the kind IT guy from her office, Eleanor slowly begins to open up and heal. This touching and humorous novel explores loneliness, mental health, and the transformative power of kindness.
-        </p>
-    
-    </div>
+  <div id="title">
+    <h1>Readist</h1>
+  </div>
 
-    <div id="two">
-        <img id="id2" src="./author book1.jpeg" height="300" width="200" alt="book1">
-        <h2 style="color: white;" class="heads">Meet the author</h2>
-        <p id="p2">
-            Gail Honeyman is a Scottish author who gained widespread recognition with her debut novel Eleanor Oliphant Is Completely Fine. The book won the Costa First Novel Award and became an international bestseller. Honeyman’s writing is known for its warmth, wit, and insight into human behavior. She draws on themes of trauma, resilience, and emotional connection, creating characters who are both flawed and deeply relatable.
-        </p>
-    
+  <div id="page">
+    <a href="Readist.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <div id="head">
+    <h1>Eleanor Oliphant is Completely Fine</h1>
+    <h2>by Gail Honeyman</h2>
+  </div>
+
+  <div id="bdy">
+    <img src="eleanor oliphant is completely fine.jpeg" height="300" width="200" alt="Eleanor Oliphant Book Cover" />
+    <div class="heads">
+      <h2>Description</h2>
     </div>
-    <br><br>
-    <div class="three">
-        <a href="https://www.google.com/search?sca_esv=ef108326c3cb304c&rlz=1C1RXQR_enIN1098IN1098&sxsrf=AE3TifPGFD-h0ZNLl5xSPj8mLh73BdFepw:1749739169906&q=eleanor+oliphant+is+completely+fine&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeioyp3OhN11EY0n5qfq-zEMZldv_eRjZ2XLYc5GnVnMEIxC4WQfoNDH7FwchyAayyomVtyMIlwCjX48LT0TrXSPt4cTMBEUhFjb1npEwd-pp_aRD8Rutuf9gzrxQ1X-rVJ_s4WfJYQGlZ0dCz-NY6HC6esLApXMfMf9GTGGaIaQORmX6cA&ved=1t:220175&ictx=111&biw=1536&bih=730&dpr=1.25" >
-            <button>Shop Now</button>
-        </a>
+    <p>
+      “Eleanor Oliphant Is Completely Fine” follows Eleanor, a socially awkward and isolated woman living a routine life in Glasgow. Beneath her peculiar habits and blunt honesty lies a deeply traumatic past she refuses to confront. When she forms an unexpected friendship with Raymond, the kind IT guy from her office, Eleanor slowly begins to open up and heal. This touching and humorous novel explores loneliness, mental health, and the transformative power of kindness.
+    </p>
+  </div>
+
+  <div id="two">
+    <img src="author book1.jpeg" height="300" width="200" alt="Author - Gail Honeyman" />
+    <div class="heads">
+      <h2>Meet the Author</h2>
     </div>
-    <br><br>
+    <p id="p2">
+      Gail Honeyman is a Scottish author who gained widespread recognition with her debut novel *Eleanor Oliphant Is Completely Fine*. The book won the Costa First Novel Award and became an international bestseller. Honeyman’s writing is known for its warmth, wit, and insight into human behavior. She draws on themes of trauma, resilience, and emotional connection, creating characters who are both flawed and deeply relatable.
+    </p>
+  </div>
+
+  <div class="three">
+    <a href="https://www.google.com/search?q=eleanor+oliphant+is+completely+fine" target="_blank">
+      <button>Shop Now</button>
+    </a>
+  </div>
+
+  <br/><br/>
 </body>
 </html>
