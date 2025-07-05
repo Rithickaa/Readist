@@ -68,19 +68,21 @@
             font-size: 1rem;
             color: white;
         }
-            @media only screen and (max-width: 600px) {
+           <style>
+        @media only screen and (max-width: 600px) {
             html,
             body {
                 margin: 0;
                 padding: 0;
                 height: 100%;
+                min-height: 100dvh; /* Fix: Ensure full screen height on mobile */
                 background-color: #f8f9fa;
                 background-image: url(./download.jpeg);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
-                color: white;
                 font-family: 'Segoe UI', sans-serif;
+                color: white;
             }
     
             .full-page-content {
@@ -89,7 +91,7 @@
                 justify-content: center;
                 align-items: center;
                 padding: 20px;
-                min-height: 100dvh; /* Fix for full height on mobile */
+                min-height: 100dvh; /* Ensures full background image height */
                 text-align: center;
                 color: white;
             }
@@ -105,7 +107,7 @@
             }
     
             .tagline {
-                font-size: 0.9rem;
+                font-size: 0.95rem;
             }
     
             .description {
@@ -116,9 +118,11 @@
     
             .btn-primary {
                 font-size: 0.95rem;
-                padding: 8px 16px;
+                padding: 10px 18px;
             }
         }
+</style>
+
     </style>
 </head>
 
