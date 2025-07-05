@@ -18,7 +18,7 @@
             color: white;
             font-family: 'Segoe UI', sans-serif;
         }
-
+    
         .contact-info-section {
             backdrop-filter: brightness(0.5);
             display: flex;
@@ -29,28 +29,47 @@
             min-height: 100vh;
             padding: 40px;
         }
-
+    
         .contact-info-section h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
-
+    
         .contact-info-section p {
             max-width: 700px;
             font-size: 1.2rem;
             line-height: 1.8;
             margin-bottom: 15px;
         }
-
+    
         .contact-details {
             font-size: 1rem;
             margin-top: 30px;
         }
-
+    
         .contact-details p {
             margin: 5px 0;
         }
-    </style>
+    
+        @media only screen and (max-width: 600px) {
+            .contact-info-section {
+                padding: 20px;
+            }
+    
+            .contact-info-section h1 {
+                font-size: 1.8rem;
+            }
+    
+            .contact-info-section p {
+                font-size: 1rem;
+            }
+    
+            .contact-details {
+                font-size: 0.9rem;
+            }
+        }
+</style>
+
 </head>
 
 <body>
