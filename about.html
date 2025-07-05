@@ -69,8 +69,29 @@
             color: white;
         }
             @media only screen and (max-width: 600px) {
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                background-color: #f8f9fa;
+                background-image: url(./download.jpeg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                color: white;
+                font-family: 'Segoe UI', sans-serif;
+            }
+    
             .full-page-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 padding: 20px;
+                min-height: 100dvh; /* Fix for full height on mobile */
+                text-align: center;
+                color: white;
             }
     
             .logo-icon {
@@ -90,6 +111,7 @@
             .description {
                 font-size: 1rem;
                 line-height: 1.6;
+                margin-bottom: 20px;
             }
     
             .btn-primary {
@@ -118,7 +140,7 @@
             to books that inspire, comfort, challenge, and entertain. Step into a world where every turn of the page
             brings you closer to stories that matter.
         </p>
-        <a href="./Readist.html" class="btn btn-primary">Go to home page</a>
+        <a href="index.html" class="btn btn-primary">Go to home page</a>
     </div>
 
 </body>
