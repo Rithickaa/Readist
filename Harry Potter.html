@@ -1,202 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Harry Potter and the Sorcerer's Stone</title>
-  <style>
-    body {
-      text-align: center;
-      background-color: rgba(204, 165, 140, 0.849);
-      font-family: 'Times New Roman', Times, serif;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - Readist</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgba(204, 165, 140, 0.849);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            color: rgb(149, 40, 1);
+            padding-top: 5%;
+            margin-left: 10%;
+            font-size:x-large;
+            margin-right: 10%;
+        }
+        img{
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
+        #head{
+            color: rgb(73, 47, 0);
+            font-family:'Times New Roman', Times, serif;
+        }
+        #title{
+            text-align: center;
+        }
+        #bdy{
+            background-image: url(18.jpeg);
+            height: 350px;
+            width: 100%;
+        }
+        #two{
+            background-color: rgb(202, 127, 77);
+            font-family: 'Times New Roman', Times, serif;
+            height: 350px;
+            width: 100%;
+        }
+        p2{
+            text-align: center;
+            margin-left: 2%;
+        }
+        
 
-    p {
-      color: rgb(149, 40, 1);
-      padding-top: 5%;
-      margin: 0 10%;
-      font-size: x-large;
-    }
+        button{
+            background-color: rgb(149, 40, 1);
+            font-size: larger;
+            color: rgb(243, 240, 240)
+        }
+        *{
+            margin: 0px;
+        }
+        #page a{
+            display: inline-block;
+            width: 504px;
+            margin: 0px;
+            text-align: center;
+            background-color: rgb(183, 102, 58);
+            font-size:large;
+            text-decoration: none;
+            color: white;
+            border-top: 1px solid #fcf4f8;
+            border-bottom: 1px solid #fcf4f8;
+        }
+        button:hover{
+            background-color: white;
+            color: rgb(111, 50, 4);
+        }
+        #page >.link:hover{
+            background-color: rgb(129, 57, 1);
+            color: rgb(255, 255, 255);
+        }
+        .heads{
+            position: relative;
+            right: 170px;
+            top: 30px;
+        }
+        @media screen and (max-width: 600px) {
+            #page a {
+                display: block;
+                width: 100%;
+                padding: 12px 0;
+                font-size: medium;
+            }
 
-    img {
-      float: left;
-      margin-top: 2%;
-      margin-left: 5%;
-      margin-right: 5%;
-    }
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                width: 45%;
+                height: auto;
+            }
 
-    #head {
-      color: rgb(73, 47, 0);
-    }
+            #bdy, #two {
+                height: auto;
+                padding-bottom: 20px;
+            }
 
-    #title {
-      text-align: center;
-    }
+            p, #p2 {
+                font-size: medium;
+                padding: 0 5%;
+                text-align: justify;
+            }
 
-    #bdy {
-      background-image: url(18.jpeg);
-      height: 350px;
-      width: 100%;
-    }
+            .heads {
+                position: static;
+                margin-top: 20px;
+            }
 
-    #two {
-      background-color: rgb(202, 127, 77);
-      height: 350px;
-      width: 100%;
-    }
+            button {
+                font-size: medium;
+                padding: 10px 20px;
+            }
+        }
 
-    button {
-      background-color: rgb(149, 40, 1);
-      font-size: larger;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
+        /* Tablets (601px to 900px) */
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            #page a {
+                width: 100%;
+                font-size: large;
+                padding: 12px 0;
+            }
 
-    button:hover {
-      background-color: white;
-      color: rgb(111, 50, 4);
-    }
+            img {
+                float: none;
+                display: block;
+                margin: 15px auto;
+                width: 40%;
+                height: auto;
+            }
 
-    #page a {
-      display: inline-block;
-      width: 504px;
-      background-color: rgb(183, 102, 58);
-      font-size: large;
-      text-decoration: none;
-      color: white;
-      border-top: 1px solid #fcf4f8;
-      border-bottom: 1px solid #fcf4f8;
-      padding: 10px 0;
-    }
+            #bdy, #two {
+                height: auto;
+                padding-bottom: 20px;
+            }
 
-    #page > .link:hover {
-      background-color: rgb(129, 57, 1);
-      color: white;
-    }
+            p, #p2 {
+                font-size: large;
+                padding: 0 8%;
+                text-align: justify;
+            }
 
-    .heads {
-      position: relative;
-      right: 170px;
-      top: 30px;
-    }
+            .heads {
+                position: static;
+                margin-top: 20px;
+            }
 
-    @media screen and (max-width: 600px) {
-      #page a {
-        display: block;
-        width: 100%;
-        padding: 12px 0;
-        font-size: medium;
-      }
-
-      img {
-        float: none;
-        display: block;
-        margin: 10px auto;
-        width: 45%;
-        height: auto;
-      }
-
-      #bdy, #two {
-        height: auto;
-        padding-bottom: 20px;
-      }
-
-      p {
-        font-size: medium;
-        padding: 0 5%;
-        text-align: justify;
-      }
-
-      .heads {
-        position: static;
-        margin-top: 20px;
-      }
-
-      button {
-        font-size: medium;
-        padding: 10px 20px;
-      }
-    }
-
-    @media screen and (min-width: 601px) and (max-width: 900px) {
-      #page a {
-        width: 100%;
-        font-size: large;
-        padding: 12px 0;
-      }
-
-      img {
-        float: none;
-        display: block;
-        margin: 15px auto;
-        width: 40%;
-        height: auto;
-      }
-
-      #bdy, #two {
-        height: auto;
-        padding-bottom: 20px;
-      }
-
-      p {
-        font-size: large;
-        padding: 0 8%;
-        text-align: justify;
-      }
-
-      .heads {
-        position: static;
-        margin-top: 20px;
-      }
-
-      button {
-        font-size: large;
-        padding: 12px 25px;
-      }
-    }
-  </style>
+            button {
+                font-size: large;
+                padding: 12px 25px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div id="title">
-    <h1 style="color: rgb(73, 47, 0);">Readist</h1>
-  </div><br>
+    <div id="title">
+        <h1 style="color: rgb(73, 47, 0);">Readist</h1>
+    </div><br>
+    <div id="page">
+        <a href="index.html" class="link">Home</a>
+        <a href="about.html" class="link">About Us</a>
+        <a href="contact.html" class="link">Contact Us</a>
 
-  <div id="page">
-    <a href="index.html" class="link">Home</a>
-    <a href="about.html" class="link">About Us</a>
-    <a href="contact.html" class="link">Contact Us</a>
-  </div><br>
+    </div><br>
+    <div id="head">
+        <h1>Harry Potter and Sorcerer's Stone</h1>
+        <h2>JK Rowling</h2>
+    </div><br>
+    <div id="bdy">
+        <img id="one" src="Harry Potter.jpg" height="300" width="200" alt="book1">
+        <h2 style="color: rgb(127, 35, 2);" class="heads">Description</h2>
+        <p id="p1">“Harry Potter and the Sorcerer’s Stone” introduces readers to Harry Potter, an orphan who discovers he is a wizard on his eleventh birthday. Whisked away to Hogwarts School of Witchcraft and Wizardry, he makes new friends and uncovers dark secrets about his past — including the truth about a dark wizard named Voldemort. Full of magic, adventure, and wonder, this first book sets the stage for one of the most iconic fantasy series of all time.
+    
+    </div>
 
-  <div id="head">
-    <h1>Harry Potter and the Sorcerer's Stone</h1>
-    <h2>J.K. Rowling</h2>
-  </div><br>
-
-  <div id="bdy">
-    <img id="one" src="Harry Potter.jpg" height="300" width="200" alt="Harry Potter Book Cover">
-    <h2 style="color: rgb(127, 35, 2);" class="heads">Description</h2>
-    <p>
-      “Harry Potter and the Sorcerer’s Stone” introduces readers to Harry Potter, an orphan who discovers he is a wizard on his eleventh birthday. Whisked away to Hogwarts School of Witchcraft and Wizardry, he makes new friends and uncovers dark secrets about his past — including the truth about a dark wizard named Voldemort. Full of magic, adventure, and wonder, this first book sets the stage for one of the most iconic fantasy series of all time.
-    </p>
-  </div>
-
-  <div id="two">
-    <img id="id2" src="author book1.jpeg" height="300" width="200" alt="Author J.K. Rowling">
-    <h2 style="color: rgb(127, 35, 2);" class="heads">Meet the Author</h2>
-    <p>
-      J.K. Rowling is a British author who skyrocketed to fame with the Harry Potter series, which has sold over 500 million copies worldwide. Born in 1965 in England, Rowling wrote the first book while struggling as a single mother. Her success story is one of perseverance and creativity. Beyond Harry Potter, she has written adult fiction under the pseudonym Robert Galbraith. She is known for her richly detailed worlds, moral themes, and influence on a generation of readers.
-    </p>
-  </div>
-
-  <br><br>
-  <div class="three">
-    <a href="https://www.google.com/search?q=harry+potter+and+the+sorcerer's+stone+by+j.k.+rowling" target="_blank">
-      <button>Shop Now</button>
-    </a>
-  </div>
-  <br><br>
+    <div id="two">
+        <img id="id2" src="author book1.jpeg" height="300" width="200" alt="book1">
+        <h2 style="color: rgb(127, 35, 2);" class="heads">Meet the author</h2>
+        <p id="p2">
+            J.K. Rowling is a British author who skyrocketed to fame with the Harry Potter series, which has sold over 500 million copies worldwide. Born in 1965 in England, Rowling wrote the first book while struggling as a single mother. Her success story is one of perseverance and creativity. Beyond Harry Potter, she has written adult fiction under the pseudonym Robert Galbraith. She is known for her richly detailed worlds, moral themes, and influence on a generation of readers.
+        </p>
+    
+    </div>
+    <br><br>
+    <div class="three">
+        <a href="https://www.google.com/search?sca_esv=21add0260304d420&rlz=1C1RXQR_enIN1098IN1098&sxsrf=AE3TifM801X8qpqc5tde4kaO6OJ7Z5-oew:1749722496256&q=harry+potter+and+the+sorcerer%27s+stone+by+j.k.+rowling&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeioyp3OhN11EY0n5qfq-zEMzuQRQtDnOcgd0wUd10tNAMgXXFprVMEy7f8TgqpuOGosfl8GeollgDZdTDixci3wAbHWFzvCbWm_BqjfU9r17Il0GtXU36p8uwrKrzfeNlRhOOANzExhyfQYMST3c08pAWuqJgc7LH4r3Ziwa7eD6Dr_jjg&ved=1t:220175&ictx=111&biw=1536&bih=730&dpr=1.25" >
+            <button>Shop Now</button>
+        </a>
+    </div>
+    <br><br>
 </body>
 </html>
