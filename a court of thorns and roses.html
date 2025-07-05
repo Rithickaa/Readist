@@ -1,179 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A Court of Thorns and Roses - Readist</title>
-  <style>
-    body {
-      text-align: center;
-      background-color: rgba(171, 61, 61, 0.279);
-      font-family: 'Times New Roman', Times, serif;
-      margin: 0;
-    }
-    #title h1 {
-      color: rgb(138, 2, 2);
-    }
-    #page a {
-      display: inline-block;
-      width: 33.33%;
-      padding: 12px 0;
-      background-color: rgb(192, 68, 68);
-      font-size: large;
-      text-decoration: none;
-      color: white;
-      border-top: 1px solid rgb(210, 192, 192);
-      border-bottom: 1px solid rgba(171, 61, 61, 0.279);
-    }
-    #page a:hover {
-      background-color: rgb(116, 25, 25);
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Court Full Of Roses - Readist</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgba(171, 61, 61, 0.279);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            color: rgb(138, 2, 2);;
+            padding-top: 5%;
+            margin-left: 10%;
+            font-size:x-large;
+            margin-right: 10%;
+        }
+        img{
+            float: left;
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
+        #head{
+            color: rgb(138, 2, 2);
+            font-family:'Times New Roman', Times, serif;
+        }
+        #title{
+            text-align: center;
+        }
+        #bdy{
+            background-image: url(../bg/19.jpeg);
+            height: 350px;
+            width: 100%;
+        }
+        #two{
+            background-color: rgb(235, 86, 86);
+            font-family: 'Times New Roman', Times, serif;
+            height: 350px;
+            width: 100%;
+        }
+        #two > p{
+            color: white;
+        }
+        p2{
+            text-align: center;
+            margin-left: 2%;
+        }
+        
 
-    #head h1, #head h2 {
-      color: rgb(138, 2, 2);
-    }
+        button{
+            background-color: rgb(163, 30, 30);
+            font-size: larger;
+            color: rgb(243, 240, 240)
+        }
+        *{
+            margin: 0px;
+        }
+        #page a{
+            display: inline-block;
+            width: 504px;
+            margin: 0px;
+            text-align: center;
+            background-color: rgb(192, 68, 68);
+            font-size:large;
+            text-decoration: none;
+            color: white;
+            border-top: 1px solid rgb(210, 192, 192);
+            border-bottom: 1px solid rgba(171, 61, 61, 0.279);
 
-    #bdy, #two {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+            
+        }
+        button:hover{
+            background-color: rgb(243, 239, 239);
+            color: rgb(138, 2, 2);
+        }
+        #page >.link:hover{
+            background-color: rgb(116, 25, 25);
+            color: rgb(255, 255, 255);
+        }
+        .heads{
+            position: relative;
+            right: 170px;
+            top: 30px;
+        }
+        @media screen and (max-width: 600px) {
+            #page a {
+                display: block;
+                width: 100%;
+                padding: 12px 0;
+                font-size: medium;
+            }
 
-    #bdy {
-      background-image: url(19.jpeg);
-      background-size: cover;
-    }
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                width: 45%;
+                height: auto;
+            }
 
-    #two {
-      background-color: rgb(235, 86, 86);
-    }
+            #bdy, #two {
+                height: auto;
+                padding-bottom: 20px;
+            }
 
-    #bdy img, #two img {
-      border: 4px inset white;
-      max-width: 200px;
-      height: auto;
-    }
+            p, #p2 {
+                font-size: medium;
+                padding: 0 5%;
+                text-align: justify;
+            }
 
-    .content h2 {
-      margin-top: 0;
-      color: rgb(138, 2, 2);
-      text-align: left;
-    }
+            .heads {
+                position: static;
+                margin-top: 20px;
+            }
 
-    .content p {
-      color: rgb(138, 2, 2);
-      font-size: large;
-      text-align: justify;
-      max-width: 600px;
-    }
+            button {
+                font-size: medium;
+                padding: 10px 20px;
+            }
+        }
 
-    #two .content h2 {
-      color: white;
-    }
+        /* Tablets (601px to 900px) */
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            #page a {
+                width: 100%;
+                font-size: large;
+                padding: 12px 0;
+            }
 
-    #two .content p {
-      color: white;
-    }
+            img {
+                float: none;
+                display: block;
+                margin: 15px auto;
+                width: 40%;
+                height: auto;
+            }
 
-    button {
-      background-color: rgb(163, 30, 30);
-      font-size: larger;
-      padding: 10px 30px;
-      color: rgb(243, 240, 240);
-      border: none;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+            #bdy, #two {
+                height: auto;
+                padding-bottom: 20px;
+            }
 
-    button:hover {
-      background-color: rgb(243, 239, 239);
-      color: rgb(138, 2, 2);
-    }
+            p, #p2 {
+                font-size: large;
+                padding: 0 8%;
+                text-align: justify;
+            }
 
-    .three {
-      margin: 30px 0;
-    }
+            .heads {
+                position: static;
+                margin-top: 20px;
+            }
 
-    @media screen and (max-width: 600px) {
-      #page a {
-        display: block;
-        width: 100%;
-        font-size: medium;
-      }
+            button {
+                font-size: large;
+                padding: 12px 25px;
+            }
+        }
 
-      #bdy, #two {
-        flex-direction: column;
-        padding: 20px;
-      }
 
-      .content p {
-        font-size: medium;
-        padding: 0 5%;
-      }
 
-      button {
-        font-size: medium;
-        padding: 10px 20px;
-      }
-    }
-
-    @media screen and (min-width: 601px) and (max-width: 900px) {
-      #page a {
-        width: 100%;
-        font-size: large;
-      }
-
-      .content p {
-        font-size: large;
-        padding: 0 8%;
-      }
-
-      button {
-        font-size: large;
-        padding: 12px 25px;
-      }
-    }
-  </style>
+    </style>
 </head>
 <body>
-  <div id="title">
-    <h1>Readist</h1>
-  </div><br>
+    <div id="title">
+        <h1 style="color: rgb(138, 2, 2);">Readist</h1>
+    </div><br>
+    <div id="page">
+        <a href="index.html" class="link">Home</a>
+        <a href="about.html" class="link">About Us</a>
+        <a href="contact.html" class="link">Contact Us</a>
 
-  <div id="page">
-    <a href="index.html" class="link">Home</a>
-    <a href="about.html" class="link">About Us</a>
-    <a href="contact.html" class="link">Contact Us</a>
-  </div><br>
-
-  <div id="head">
-    <h1>A Court of Thorns and Roses</h1>
-    <h2>Sarah J Maas</h2>
-  </div><br>
-
-  <div id="bdy">
-    <img src="a court of thorns and roses(f).jpg" alt="A Court of Thorns and Roses book cover">
-    <div class="content">
-      <h2>Description</h2>
-      <p>“A Court of Thorns and Roses” follows Feyre Archeron, a mortal huntress who is taken to the magical land of Prythian as punishment for killing a fae wolf. There, she becomes entangled with Tamlin, a powerful High Fae lord, and discovers an ancient curse threatening their world. As Feyre learns about love, power, and sacrifice, she transforms from a survivor into a heroine in this thrilling romantic fantasy inspired by Beauty and the Beast.</p>
+    </div><br>
+    <div id="head">
+        <h1>A Court of Thorns and Roses</h1>
+        <h2>Sarah J Maas</h2>
+    </div><br>
+    <div id="bdy">
+        <img id="one" src="a court of thorns and roses(f).jpg" height="300" width="200" alt="book1">
+        <h2 style="color: rgb(138, 2, 2);" class="heads">Description</h2>
+        <p id="p1">“A Court of Thorns and Roses” follows Feyre Archeron, a mortal huntress who is taken to the magical land of Prythian as punishment for killing a fae wolf. There, she becomes entangled with Tamlin, a powerful High Fae lord, and discovers an ancient curse threatening their world. As Feyre learns about love, power, and sacrifice, she transforms from a survivor into a heroine in this thrilling romantic fantasy inspired by Beauty and the Beast.
+        </p>
+    
     </div>
-  </div>
 
-  <div id="two">
-    <img src="author book1.jpeg" alt="Sarah J. Maas">
-    <div class="content">
-      <h2>Meet the author</h2>
-      <p>Sarah J. Maas is a #1 New York Times bestselling author known for her fantasy series Throne of Glass, A Court of Thorns and Roses, and Crescent City. Born in 1986 in New York, Maas began writing at a young age and gained a large following through online platforms before publishing her first book. Her stories are known for strong heroines, intricate world-building, and emotionally rich plots that blend romance, action, and magic.</p>
+    <div id="two">
+        <img id="id2" src="author book1.jpeg" height="300" width="200" alt="book1">
+        <h2 style="color: white;" class="heads">Meet the author</h2>
+        <p id="p2">
+            Sarah J. Maas is a #1 New York Times bestselling author known for her fantasy series Throne of Glass, A Court of Thorns and Roses, and Crescent City. Born in 1986 in New York, Maas began writing at a young age and gained a large following through online platforms before publishing her first book. Her stories are known for strong heroines, intricate world-building, and emotionally rich plots that blend romance, action, and magic.
+        </p>
+    
     </div>
-  </div>
-
-  <div class="three">
-    <a href="https://www.google.com/search?q=a+court+of+thorns+and+roses+by+sarah+j+maas" target="_blank">
-      <button>Shop Now</button>
-    </a>
-  </div>
+    <br><br>
+    <div class="three">
+        <a href="https://www.google.com/search?sca_esv=21add0260304d420&rlz=1C1RXQR_enIN1098IN1098&sxsrf=AE3TifMqzDQIUasKsAjlNDPq24r3uWGRdg:1749723074727&q=a+court+of+thorns+and+roses+by+sarah+j+maas&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeioyp3OhN11EY0n5qfq-zEMZldv_eRjZ2XLYc5GnVnMEZGNJVrGoAwGchCcSdnZLZzu8WR4KLggaXbYJbhl-23mjUB_oSnX3dAzEU8H_SHfN9h-7f0cjfkQhbwHl7hffgyqItJ7__9AugqVMYcPKa8DGxLAxgsMbZDoo0m0NVfG1t4IpRQ&ved=1t:220175&ictx=111&biw=1536&bih=730&dpr=1.25" >
+            <button>Shop Now</button>
+        </a>
+    </div>
+    <br><br>
 </body>
 </html>
